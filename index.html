@@ -6,14 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="libs/opencv340.js"></script>
 
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: white;
+        }
+
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #video-input, #canvas-output {
+            border-radius: 50px;
+            border: 1px solid #fff;
+        }
+        
+    </style>
+
     <title>OpenCV Example</title>
 </head>
 <body>
-    <label>Input CAM</label>
+    <h1>Input CAM</h1>
     <video id="video-input" width="480px" height="320px"></video>
 
-    <label>Output OpenCV</label>
+    <h1>Output OpenCV</h1>
     <canvas id="canvas-output" width="480px" height="320px"></canvas>
+
     <script src="script.js"></script>
 </body>
 </html>
