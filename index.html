@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
     <script src="libs/opencv340.js"></script>
+    <script src="libs/utils.js"></script>
 
     <style>
         body {
             display: flex;
-            flex-direction: column;
             align-items: center;
+            flex-direction: column;
+            justify-content: center;
             margin: 0;
             padding: 0;
             background-color: #000;
@@ -22,22 +27,31 @@
             margin-bottom: 20px;
         }
 
-        #video-input, #canvas-output {
+        div {
+            margin-left: 50px;
+        }
+
+        #video-input,
+        #canvas-output {
             border-radius: 50px;
             border: 1px solid #fff;
         }
         
     </style>
-
-    <title>OpenCV Example</title>
 </head>
-<body>
-    <h1>Input CAM</h1>
-    <video id="video-input" width="480px" height="320px"></video>
 
-    <h1>Output OpenCV</h1>
-    <canvas id="canvas-output" width="480px" height="320px"></canvas>
+<body>
+    <div>
+        <h1>Input CAM</h1>
+        <video id="video-input" width="480px" height="320px"></video>
+    </div>
+
+    <div>
+        <h1>Output OpenCV</h1>
+        <canvas id="canvas-output" width="480px" height="320px"></canvas>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
